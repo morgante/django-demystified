@@ -5,7 +5,7 @@ from .models import Question, Choice
 # Set up our question admin
 class ChoiceInline(admin.StackedInline):
     model = Choice
-    extra = 3
+    extra = 1
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
