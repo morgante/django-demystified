@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+admin.site.site_header = 'Poll Administration'
+admin.site.site_title = 'Poll Administration'
+admin.site.index_title = 'Manage Polls'
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 ]
