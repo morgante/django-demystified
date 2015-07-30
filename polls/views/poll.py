@@ -6,10 +6,12 @@ from django.views import generic
 from ..models import Question, Choice
 
 class DetailView(generic.DetailView):
+    pk_url_kwarg = 'question_id'
     model = Question
     template_name = 'polls/question_detail.html'
 
 class ResultsView(generic.DetailView):
+    pk_url_kwarg = 'question_id'
     model = Question
     template_name = 'polls/results.html'
 
