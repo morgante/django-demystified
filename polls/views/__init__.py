@@ -1,2 +1,2 @@
 from index import IndexView
-from poll import detail, results, vote
+from poll import DetailView, ResultsView, vote
