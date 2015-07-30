@@ -9,9 +9,7 @@ class DetailView(generic.DetailView):
     pk_url_kwarg = 'question_id'
     model = Question
 
-class ResultsView(generic.DetailView):
-    pk_url_kwarg = 'question_id'
-    model = Question
+class ResultsView(DetailView):
     template_name = 'polls/results.html'
 
 def vote(request, question_id):
