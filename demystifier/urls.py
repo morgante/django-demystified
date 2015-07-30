@@ -21,5 +21,6 @@ admin.site.site_title = 'Poll Administration'
 admin.site.index_title = 'Manage Polls'
 
 urlpatterns = [
+    url(r'^polls/', include('polls.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
