@@ -1,3 +1,7 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
 {% if recent_questions %}
     <ul>
     {% for question in recent_questions %}
